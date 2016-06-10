@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Houssup Messenger</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="edittext_hint"><font size="10">eg #orientatal
+        #modern #traditional</font></string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="text_item">Message</string>
+    <string name="bt_sent">Sent</string>
+    <string name="title_activity_messenger_tabbed"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

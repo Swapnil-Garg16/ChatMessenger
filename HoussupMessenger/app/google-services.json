@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "291568473706",
+    "firebase_url": "https://houssup-messanger.firebaseio.com",
+    "project_id": "houssup-messanger",
+    "storage_bucket": "houssup-messanger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291568473706:android:cf6401867540195a",
+        "android_client_info": {
+          "package_name": "com.houssup.houssupmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291568473706-guastn56ds45adhfu8k1a331s16q5s2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.houssup.houssupmessenger",
+            "certificate_hash": "9053A377717685337B33F30299681BF8BDF2CEAC"
+          }
+        },
+        {
+          "client_id": "291568473706-e0mep9hu380lgua0fkmo0o4uo0q1eidb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDom2vogamm1pST2yYPCSfeKTvHGl3Dkvg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291568473706-e0mep9hu380lgua0fkmo0o4uo0q1eidb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

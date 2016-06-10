@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.houssup.houssupmessenger.Followers"
+    android:clickable="true"
+    android:onClick="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_above="@+id/followerLinearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4dp"
+
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/followerRecyclerView"
+
+            android:clickable="true"
+            android:onClick="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

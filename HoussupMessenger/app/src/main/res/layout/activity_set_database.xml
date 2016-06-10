@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#383838"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message"
+        android:layout_below="@+id/activity_my_toolbar"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            android:background="#ffffff"
+            android:layout_above="@+id/buttonSendMessage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="2">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="0.5"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxLength="99999999"
+                    android:hint="Enter your text"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="0.96" />
+
+                <ImageView
+                    android:id="@+id/cameraAttachmentButton"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/compact"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:background="@mipmap/send_button"
+            android:text="Send" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
